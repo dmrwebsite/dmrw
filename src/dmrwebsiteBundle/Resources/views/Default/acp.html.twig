@@ -1,9 +1,7 @@
 {% extends 'base.html.twig' %}
 
 {% block title %}Dotamasterrace - Admin Control Panel{% endblock %}
-{% block stylesheets %}
-    <link rel="stylesheet" href="{{ asset('styles/dmrwebsite.css') }}" />
-{% endblock %}
+{% block stylesheets %}{% endblock %}
 
 {% block body %}
 	<form action="{{ path('dmrwebsite_acp') }}" method="POST">

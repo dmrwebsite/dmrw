@@ -1,6 +1,58 @@
+# Main menu navigation
+
+# If adding extra menu navigation routes please insert them in the order
+# they are displayed in website menu (app/Resources/views/default/base.html.twig)
+
 dmrwebsite_homepage:
     path:     /
     defaults: { _controller: dmrwebsiteBundle:Default:index }
+
+# # Learn
+dmrwebsite_newtocomputers:
+    path:	/learn/newtocomputers
+    defaults: { _controller: dmrwebsiteBundle:Learn:newtocomputers }
+dmrwebsite_fromlop:
+    path:	/learn/fromlop
+    defaults: { _controller: dmrwebsiteBundle:Learn:fromlop }
+dmrwebsite_frompots:
+    path:	/learn/frompots
+    defaults: { _controller: dmrwebsiteBundle:Learn:frompots }
+dmrwebsite_teachers:
+    path:	/learn/teachers
+    defaults: { _controller: dmrwebsiteBundle:Learn:teachers }
+# # /
+
+# # Tournaments
+dmrwebsite_ongoingtournaments:
+    path:	/tournaments/ongoing
+    defaults: { _controller: dmrwebsiteBundle:Tournaments:ongoing }
+dmrwebsite_tournamentvods:
+    path:	/tournaments/vods
+    defaults: { _controller: dmrwebsiteBundle:Tournaments:vods }
+dmrwebsite_tournamentteams:
+    path:	/tournaments/teams
+    defaults: { _controller: dmrwebsiteBundle:Tournaments:teams }
+# # /
+
+dmrwebsite_dotanews:
+    path:	/dotanews
+    defaults: { _controller: dmrwebsiteBundle:Default:news }
+
+# # Community
+dmrwebsite_steamgroup:
+    path:	/community/steamgroup
+    defaults: { _controller: dmrwebsiteBundle:Community:steamgroup }
+# # /
+
+dmrwebsite_articles:
+    path:	/articles
+    defaults: { _controller: dmrwebsiteBundle:Default:articles }
+
+dmrwebsite_streams:
+    path:	/streams
+    defaults: { _controller: dmrwebsiteBundle:Default:streams }
+
+# Admin control panel navigation
 dmrwebsite_acp:
     path: /acp
     defaults: { _controller: dmrwebsiteBundle:Default:acp }

@@ -11,6 +11,24 @@ class DefaultController extends Controller
         return $this->render('dmrwebsiteBundle:Default:index.html.twig', array());
     }
 
+    public function newsAction()
+    {
+    	echo "dota news";
+    	return $this->render('dmrwebsiteBundle:Default:index.html.twig', array());
+    }
+
+    public function articlesAction()
+    {
+    	echo "DMR articles";
+    	return $this->render('dmrwebsiteBundle:Default:index.html.twig', array());
+    }
+
+    public function streamsAction()
+    {
+    	echo "DMR streams";
+    	return $this->render('dmrwebsiteBundle:Default:index.html.twig', array());
+    }
+
     public function acpAction()
     {
     	// Get the method POST data and store it

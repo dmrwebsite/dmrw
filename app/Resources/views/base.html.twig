@@ -3,18 +3,47 @@
     <head>
         <meta charset="UTF-8" />
         <title>{% block title %}Welcome!{% endblock %}</title>
+
+        <link rel="stylesheet" href="{{ asset('styles/dmrwebsite.css') }}" />
         {% block stylesheets %}{% endblock %}
+
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     </head>
     <body>
+        <div id="banner"></div>
         <nav>
             <ul id="mainMenu">
                 <li><a href="{{ path('dmrwebsite_homepage') }}">Home</a></li> 
-                <li><a href="{{ path('dmrwebsite_acp') }}">ACP</a></li>
+                <li>Learn to play Dota 2
+                    <ul>
+                        <li><a href="{{ path('dmrwebsite_newtocomputers') }}">New to computers</a></li>
+                        <li><a href="{{ path('dmrwebsite_fromlop') }}">From LoP</a></li>
+                        <li><a href="{{ path('dmrwebsite_frompots') }}">From PoTS</a></li>
+                        <li><a href="{{ path('dmrwebsite_teachers') }}">Teachers</a></li>
+                    </ul>
+                </li>
+                <li>Tournaments
+                    <ul>
+                        <li><a href="{{ path('dmrwebsite_ongoingtournaments') }}">Ongoing</a></li>
+                        <li><a href="{{ path('dmrwebsite_tournamentvods') }}">VODs</a></li>
+                        <li><a href="{{ path('dmrwebsite_tournamentteams') }}">Teams</a></li>
+                    </ul>
+                </li>
+                <li><a href="{{ path('dmrwebsite_dotanews') }}">Dota 2 News</a></li>
+                <li>Community
+                    <ul>
+                        <li><a href="http://reddit.com/r/dotamasterrace/" target="_blank">Subreddit</a></li>
+                        <li>Forums</li>
+                        <li><a href="{{ path('dmrwebsite_steamgroup') }}">Steam group and how to join</a></li>
+                    </ul>
+                </li>
+                <li><a href="{{ path('dmrwebsite_articles') }}">Articles</a></li>
+                <li><a href="{{ path('dmrwebsite_streams') }}">Streams</a></li>
             </ul>
         </nav>
 
         {% block body %}{% endblock %}
+        <a href="{{ path('dmrwebsite_acp') }}">Admin Control Panel</a>
         {% block javascripts %}{% endblock %}
     </body>
 </html>

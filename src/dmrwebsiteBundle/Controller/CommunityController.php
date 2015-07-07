@@ -8,7 +8,6 @@ class CommunityController extends Controller
 {
     public function steamgroupAction()
     {
-        echo "steam group";
-        return $this->render('dmrwebsiteBundle:Default:index.html.twig', array());
+        return $this->render('dmrwebsiteBundle:Community:steamgroup.html.twig', array());
     }
 }

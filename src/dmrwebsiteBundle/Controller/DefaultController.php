@@ -13,20 +13,17 @@ class DefaultController extends Controller
 
     public function newsAction()
     {
-    	echo "dota news";
-    	return $this->render('dmrwebsiteBundle:Default:index.html.twig', array());
+    	return $this->render('dmrwebsiteBundle:Default:news.html.twig', array());
     }
 
     public function articlesAction()
     {
-    	echo "DMR articles";
-    	return $this->render('dmrwebsiteBundle:Default:index.html.twig', array());
+    	return $this->render('dmrwebsiteBundle:Default:articles.html.twig', array());
     }
 
     public function streamsAction()
     {
-    	echo "DMR streams";
-    	return $this->render('dmrwebsiteBundle:Default:index.html.twig', array());
+    	return $this->render('dmrwebsiteBundle:Default:streams.html.twig', array());
     }
 
     public function acpAction()

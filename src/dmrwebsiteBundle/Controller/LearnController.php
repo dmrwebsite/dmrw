@@ -8,25 +8,21 @@ class LearnController extends Controller
 {
     public function newtocomputersAction()
     {
-        echo "new to computers";
-        return $this->render('dmrwebsiteBundle:Default:index.html.twig', array());
+        return $this->render('dmrwebsiteBundle:Learn:newtocomputers.html.twig', array());
     }
 
     public function fromlopAction()
     {
-        echo "from lop";
-        return $this->render('dmrwebsiteBundle:Default:index.html.twig', array());
+        return $this->render('dmrwebsiteBundle:Learn:fromlop.html.twig', array());
     }
 
     public function frompotsAction()
     {
-        echo "from pots";
-        return $this->render('dmrwebsiteBundle:Default:index.html.twig', array());
+        return $this->render('dmrwebsiteBundle:Learn:frompots.html.twig', array());
     }
 
     public function teachersAction()
     {
-        echo "teachers";
-        return $this->render('dmrwebsiteBundle:Default:index.html.twig', array());
+        return $this->render('dmrwebsiteBundle:Learn:teachers.html.twig', array());
     }
 }

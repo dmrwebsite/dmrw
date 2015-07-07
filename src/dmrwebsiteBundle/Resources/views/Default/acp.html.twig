@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Dotamasterrace - Admin Control Panel{% endblock %}
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('styles/dmrwebsite.css') }}" />
+{% endblock %}
+
+{% block body %}
+	<form action="{{ path('dmrwebsite_acp') }}" method="POST">
+		<input type="text" name="username" placeholder="Username" /><br />
+		<input type="password" name="password" placeholder="Password" /><br />
+		<input type="submit" value="Confirm" />
+
+		<div class="error">{{ error }}</div>
+	</form>
+{% endblock %}

@@ -1,0 +1,6 @@
+dmrwebsite_homepage:
+    path:     /
+    defaults: { _controller: dmrwebsiteBundle:Default:index }
+dmrwebsite_acp:
+    path: /acp
+    defaults: { _controller: dmrwebsiteBundle:Default:acp }

@@ -1,0 +1,21 @@
+dmrwebsiteBundle\Entity\Website\User:
+    type: entity
+    table: null
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        username:
+            type: string
+            length: '32'
+        password:
+            type: string
+            length: '32'
+        isMod:
+            type: boolean
+        isAdmin:
+            type: boolean
+    lifecycleCallbacks: {  }

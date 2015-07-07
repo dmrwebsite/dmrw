@@ -55,4 +55,4 @@ dmrwebsite_streams:
 # Admin control panel navigation
 dmrwebsite_acp:
     path: /acp
-    defaults: { _controller: dmrwebsiteBundle:Default:acp }
+    defaults: { _controller: dmrwebsiteBundle:Acp:index }

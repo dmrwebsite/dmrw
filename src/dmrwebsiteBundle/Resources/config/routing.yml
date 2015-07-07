@@ -1,7 +1,7 @@
 # Main menu navigation
 
 # If adding extra menu navigation routes please insert them in the order
-# they are displayed in website menu (app/Resources/views/default/base.html.twig)
+# they are displayed in website menu (app/Resources/views/base.html.twig)
 
 dmrwebsite_homepage:
     path:     /

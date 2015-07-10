@@ -3,6 +3,11 @@
 namespace dmrwebsiteBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use AppBundle\Entity\Article;
+use AppBundle\Entity\Category;
+use AppBundle\Entity\User;
+use Symfony\Component\HttpFoundation\Response;
+
 
 class DefaultController extends Controller
 {
@@ -24,5 +29,10 @@ class DefaultController extends Controller
     public function streamsAction()
     {
     	return $this->render('dmrwebsiteBundle:Default:streams.html.twig', array());
+    }
+    public function createAction()
+    {
+
+        
     }
 }

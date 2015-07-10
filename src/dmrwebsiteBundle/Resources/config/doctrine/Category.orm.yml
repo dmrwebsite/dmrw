@@ -1,0 +1,15 @@
+dmrwebsiteBundle\Entity\Category:
+    type: entity
+    table: null
+    repositoryClass: dmrwebsiteBundle\Entity\CategoryRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        category:
+            type: integer
+            column: Category
+    lifecycleCallbacks: {  }

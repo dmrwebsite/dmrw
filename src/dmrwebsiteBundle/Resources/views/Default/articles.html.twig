@@ -1,8 +1,27 @@
 {% extends 'base.html.twig' %}
 
 {% block title %}{% endblock %}
-{% block stylesheets %}{% endblock %}
+{% block stylesheets %}
+	<script language="JavaScript">
+	function setVisibility(id, visibility){
+		document.getElementById(id).style.display = visibility;
+	}
+	</script>
+{% endblock %}
 
 {% block body %}
+	<div>
+		<button name="Submit an Article" onclick="setVisibility('ArticleSubmission', inline)">
+		</button>
+		<button name="Hide Article Submission Prompt" onclick="setVisibility('ArticleSubmission', none)">
+		</button>
+			<div id="ArticleSubmission">
+				{{ form(Article) }}
+			</div>
+	</div>
+		
 	DMR Articles
+	{% block content %}
+	
+	{% endblock %}
 {% endblock %}

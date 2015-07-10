@@ -1,0 +1,31 @@
+dmrwebsiteBundle\Entity\Article:
+    type: entity
+    table: null
+    repositoryClass: dmrwebsiteBundle\Entity\ArticleRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        articleId:
+            type: integer
+            column: ArticleId
+        title:
+            type: string
+            length: '100'
+            column: Title
+        userId:
+            type: integer
+            column: UserId
+        dateSubmitted:
+            type: datetime
+            column: DateSubmitted
+        category:
+            type: integer
+            column: Category
+        content:
+            type: text
+            column: Content
+    lifecycleCallbacks: {  }
